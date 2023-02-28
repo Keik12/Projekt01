@@ -1,8 +1,5 @@
 html {
   scroll-behavior: smooth;
-}
-
-body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -10,15 +7,15 @@ a {
   text-decoration: none;
 }
 
-nav {
-  height: 50px;
-  background-color: #4e4e4e;
-}
-
 .container {
   width: 960px;
   height: 100%;
   margin: 0 auto;
+}
+
+nav {
+  height: 50px;
+  background-color: #4e4e4e;
 }
 
 .nav-container {
@@ -33,16 +30,16 @@ nav {
   font-size: 18px;
 }
 
-a {
+nav a {
   font-size: 18px;
   color: rgba(241, 241, 241, 1);
 }
 
-.list {
+.nav-list {
   display: flex;
 }
 
-.list li:nth-of-type(2) {
+.nav-list li:nth-of-type(2) {
   margin: 0 46px;
 }
 
@@ -81,7 +78,7 @@ header p {
 }
 
 .button-offer {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   color: white;
   border: 3px solid #ffffff;
@@ -118,22 +115,28 @@ section {
   background-size: 197px;
 }
 
+.specialist-details {
+  display: flex;
+  margin-bottom: 50px;
+}
+
 .text-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .person {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .description {
-  white-space: pre-line;
   font-size: 18px;
-  margin-bottom: 144px;
 }
 
-.text-wrapper:nth-of-type(even) {
+.specialist-details:nth-of-type(even) {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
@@ -172,7 +175,7 @@ section {
   width: 198px;
   background-color: rgba(241, 241, 241, 1);
   position: relative;
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,17 +215,17 @@ footer {
   align-items: center;
 }
 
-i {
+footer i {
   color: rgba(255, 255, 255, 1);
   font-size: 31px;
 }
 
-i:nth-of-type(2n) {
+footer i:nth-of-type(2n) {
   margin-left: 18px;
 }
 
 .container-footer p {
-  font-weight: 700;
+  font-weight: bold;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
 }
